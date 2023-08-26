@@ -1,0 +1,266 @@
+ 
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+} 
+
+
+/*Navigation casecutting*/
+ nav {
+    background:  #2c3e50;
+    height: 80px;
+    width: 100%;
+
+}
+
+label.logo {
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+
+} 
+
+/* dashboard main page linking */
+ label.logo a{
+    color: #fff;
+    font-size: 35px;
+    line-height: 80px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+} 
+
+/* shows the active main li class with background clr */
+ a.active,
+a:hover {
+    background: #DC3D24;
+    transition: .5s;
+}
+
+label.logo a:hover{
+    background: none;
+    color: #DC3D24;
+}
+
+
+/* toggle button */
+ .checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+
+
+/* for max screen */
+
+@media only screen and(max-width: 768px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    .Toggler{
+        display: none;
+    }
+
+    nav ul li a{
+    display: inline-block;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+        
+    }
+
+    #check{
+        display: none;
+    }
+    .checkbtn{
+        display: none;
+    }
+}
+
+
+/* for a smaller screen */
+
+@media only screen and(max-width:576px) {
+    .checkbtn {
+        display: block;
+    }
+
+    label .logo {
+        /* font-size: 30px;
+        padding-left:0px;
+        position: fixed;
+        color: white; */
+
+        
+            font-size: 30px;
+            padding-left: 0px;
+            position: fixed;
+            color: white;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+          
+    }
+
+
+    nav {
+        background:#2c3e50 ;
+    }
+
+    ul {
+        position: fixed; 
+        width: 100%;
+        height: 100vh;
+        background:  #232B2B;
+        top: 80px;
+        left: -100%;
+        text-align: right;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+        margin-bottom: -20px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+        text-decoration: none;
+        color: white;
+    }
+
+    a:hover,
+    a.active {
+        background: none;
+        color: #DC3D24;
+    }
+
+    #check{
+        display: none;
+    }
+
+    .Toggler {
+        display: flex;
+        align-items: right;
+        justify-content: flex-end;
+        margin-right: 0px;
+        margin-top: 1.5rem;
+        cursor: pointer;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 1222px) {
+    .checkbtn {
+        display: block;
+    }
+
+    label.logo {
+        color: white;
+    }
+
+    nav {
+        background:  #2c3e50;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background:#232B2B ;
+        top: 80px;
+        left: -100%;
+        text-align: right;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+        margin-bottom: -20px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+        text-decoration: none;
+        color: white;
+    }
+
+    a:hover,
+    a.active {
+        background: none;
+        color: #DC3D24;
+        text-decoration: none;
+    }
+
+    #check {
+        display: none;
+    }
+
+    .Toggler {
+        display: flex;
+        align-items: right;
+        justify-content: flex-end;
+        margin-right: 0px;
+        margin-top: 1.5rem;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
+
+

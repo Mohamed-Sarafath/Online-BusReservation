@@ -1,0 +1,535 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  background: linear-gradient(to bottom, rgb(139, 192, 223), rgb(242, 242, 242));
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.logo {
+  cursor: pointer;
+  margin: 25px;
+  margin-top: 40px;
+
+}
+
+
+h1 {
+  color: #333;
+  font-family: tahoma;
+  font-size: 3rem;
+  font-weight: 100;
+  line-height: 1.5;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  max-width: 550px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+h1 span {
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  margin-left: 40px;
+  color: white;
+  font-weight: lighter;
+}
+
+
+.message {
+  color: #fff;
+  display: block;
+  font-weight: 900;
+  overflow: hidden;
+  position: absolute;
+  padding-left: 0.5rem;
+  padding-right: 300px;
+  top: 0.2rem;
+  left: 270px;
+  animation: openclose 5s ease-in-out infinite;
+}
+
+
+
+
+
+
+/* max screen responsive */
+
+@media screen and (max-width: 768px) {
+  /* .message {
+    padding-right: 100px;
+    
+  } */
+
+  .message{
+    padding-top: 2px;
+    padding-right: 0px;
+    font-size: 3rem;
+    width: 200px;
+    left: 60%;
+    transform: translateX(-15%);
+  }
+
+  .logo {
+    margin-top: 40px;
+    }
+
+    h1 span{
+      font-size: 3rem;
+    }
+
+      
+@media only screen and (max-width: 768px) {
+
+  @keyframes openclose {
+      0% {
+          top: 0.2rem;
+          width: 0;
+      }
+      5% {
+          width: 0;
+      }
+      15% {
+          width: 150px;
+      }
+      30% {
+          top: 0.2rem;
+          width: 150px;
+      }
+      33% {
+          top: 0.2rem;
+          width: 0;
+      }
+      35% {
+          top: 0.2rem;
+          width: 0;
+      }
+      38% {
+          top: -3.5rem;
+      }
+      48% {
+          top: -3.5rem;
+          width: 120px;
+      }
+      62% {
+          top: -3.5rem;
+          width: 120px;
+      }
+      66% {
+          top: -3.5rem;
+          width: 0;
+          text-indent: 0;
+      }
+      71% {
+          top: -6.5rem;
+          width: 0;
+          text-indent: 5px;
+      }
+      86% {
+          top: -6.5rem;
+          width: 180px;
+      }
+      95% {
+          top: -6.5rem;
+          width: 180px;
+      }
+      98% {
+          top: -6.5rem;
+          width: 0;
+          text-indent: 5px;
+      }
+      100% {
+          top: 0;
+          width: 0;
+          text-indent: 0;
+      }
+  }
+}
+}
+
+
+
+
+
+
+/* min screen responsive */
+@media screen and (max-width: 576px) {
+  .message {
+    padding-top: 2px;
+    padding-right: 0px;
+    font-size: 3rem;
+    width: 200px;
+    left: 50%;
+    transform: translateX(-5%);
+  }
+
+  .logo {
+    margin-top: 50px;
+    }
+
+
+
+  h1 span {
+    font-size: 2.5rem;
+    margin-left: 20px;
+    
+  }
+
+  @media only screen and (min-width: 576px) {
+
+    @keyframes openclose {
+      0% {
+        top: 0.2rem;
+        width: 0;
+      }
+      5% {
+        width: 0;
+      }
+      15% {
+        width: 200px;
+      }
+      30% {
+        top: 0.2rem;
+        width: 200px;
+      }
+      33% {
+        top: 0.2rem;
+        width: 0;
+      }
+      35% {
+        top: 0.2rem;
+        width: 0;
+      }
+      38% {
+        top: -4rem;
+      }
+      48% {
+        top: -4rem;
+        width: 160px;
+      }
+      62% {
+        top: -4rem;
+        width: 160px;
+      }
+      66% {
+        top: -4rem;
+        width: 0;
+        text-indent: 0;
+      }
+      71% {
+        top: -8rem;
+        width: 0;
+        text-indent: 5px;
+      }
+      86% {
+        top: -8rem;
+        width: 240px;
+      }
+      95% {
+        top: -8rem;
+        width: 240px;
+      }
+      98% {
+        top: -8rem;
+        width: 0;
+        text-indent: 5px;
+      }
+      100% {
+        top: 0;
+        width: 0;
+        text-indent: 0;
+      }
+    }
+  }
+  
+
+}
+
+  
+  
+  @keyframes openclose {
+    0% {
+      top: 0.2rem;
+      width: 0;
+    }
+    5% {
+      width: 0;
+    }
+    15% {
+      width: 230px;
+    }
+    30% {
+      top: 0.2rem;
+      width: 230px;
+    }
+    33% {
+      top: 0.2rem;
+      width: 0;
+    }
+    35% {
+      top: 0.2rem;
+      width: 0;
+    }
+    38% {
+      top: -4.5rem;
+      
+    }
+    48% {
+      top: -4.5rem;
+      width: 190px;
+    }
+    62% {
+      top: -4.5rem;
+      width: 190px;
+    }
+    66% {
+      top: -4.5rem;
+      width: 0;
+      text-indent: 0;
+    }
+    71% {
+      top: -9rem;
+      width: 0;
+      text-indent: 5px;
+    }
+    86% {
+      top: -9rem;
+      width: 285px;
+    }
+    95% {
+      top: -9rem;
+      width: 285px;
+    }
+    98% {
+      top: -9rem;
+      width: 0;
+      text-indent: 5px;
+    }
+    100% {
+      top: 0;
+      width: 0;
+      text-indent: 0;
+    }
+  }
+
+
+
+
+
+
+
+
+
+/* form control design section satrts */
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    
+  }
+  
+  .form-control {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin-left: 2rem;
+    margin-bottom: 100px;
+    margin-top: 4rem;
+    border-radius: 1rem;
+    padding: 20px;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3)
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 50px;
+    margin-top: -5px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .col-md-3 {
+    width: 23%;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  select,
+  input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #fff;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: green;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: darkgreen;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .row {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .col-md-3 {
+      width: 100%;
+    }
+  }
+  
+  
+
+/* footer design satrt */
+.footer {
+ 
+  background-color: #4D4D4D;
+  color: #f5f5f5;
+  padding: 40px; 
+  display: flex;
+  justify-content: center;
+  width: 120%;
+  position:inherit;
+  bottom: 0;
+  overflow-x: hidden;
+}
+
+
+
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+
+  
+}
+
+@media screen and (max-width: 768px) {
+
+  .container {
+      max-width: 100%;
+     
+  }
+  
+
+
+  .form-control{
+    margin-left: -7rem;
+  }
+
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: smaller;
+}
+
+.col-md-4 {
+  width: 33.33%;
+  padding: 0 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .col-md-4 {
+      width: 100%;
+      padding: 15px 0;
+  }
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: smaller;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100px;
+
+}
+
+.social-media li a i{
+  color: #f5f5f5;
+  font-size: 1.5rem;
+  padding-right: 1rem;
+  cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 576px) {
+  
+  .social-media li a i{
+    color: #f5f5f5;
+    font-size: 1.5rem;
+    padding-right: 1rem;
+    cursor: pointer;
+    
+  }
+  
+} 
