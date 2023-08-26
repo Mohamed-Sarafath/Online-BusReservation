@@ -5,6 +5,17 @@ Requirements
 -> vs code or other code editor
 -> database mysql
 
+system running
+-> download all files.
+-> move all the file to c/: -> xampp -> htdocs (inside the htdocs  paste).
+-> then open xampp and start 'apache server' & 'mysql'.
+-> open your database and create database name called same as 'bus'.
+-> now import the 'bus.sql' to the created bus database.
+-> open your browser and type localhost/: 'folder thst you stored in the htdocs'.
+
+#thas all you can use the system....
+
+
 User Interface Fuctions
 -> UI Designs are stored in the folder "Src".
 -> This src folder contains four php files such as index, Available, booking, help.
